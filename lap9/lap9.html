@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Lap 9</title>
+    <style type="text/css">
+        .container{
+            width: 70%;
+            margin: auto;
+        }
+        #form1,#form2{
+            padding:10px;
+        }
+        form>div{
+            margin: 5px 0;
+        }
+        #form2{
+            width: 100%;
+            padding: 25px;
+            border:3px dashed lightblue;
+            border-radius: 7px;
+            position: relative;
+            margin-top: 40px 
+        }
+        #form2>h2{
+            position: absolute;
+            width: 120px;
+            left: 43%;
+            top: -35px;
+            background-color:white;
+            color: blue;
+        }
+        #form2>div> input{
+            width: 99%;
+            padding: 5px;
+            border-radius: 6px;
+        }
+        .divgt input{
+
+        }
+        input[type='file']{
+            border:1px solid black;
+            border-radius: 6px;
+        }
+        select{
+            width: 100%;
+            padding: 5px;
+        }
+        textarea{
+            width: 100%;
+        }
+        .text-center{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form action="" id="form1">
+            <div>
+                <label for="name">User Name</label>
+                <br>
+                <input type="text" name="name" id="name">
+            </div>
+            <div>
+                <label for="pws">Password</label>
+                <br>
+                <input type="Password" name="pws" id="pws">
+            </div>
+            <div>
+                <input type="checkbox" name="check" id="remem">
+                <label for="remem">Remember me?</label>
+            </div>
+            <div >
+                <input type="submit" value="Login">
+            </div>
+        </form>
+        <hr>
+        <form action="" id="form2" method="post" enctype="">
+            <h2 class="text-center">Đăng Ký</h2>
+            <div>
+                <label for="name">Họ và Tên</label>
+                <input type="text" name="name" id="name">
+            </div>
+            <div class="divgt">
+                <label>Giới tính</label>
+                <label><input type="radio" name="gt" id="gt" checked>Nam</label>
+                <label><input type="radio" name="gt" id="gt">Nữ</label>
+            </div>
+            <div>
+                <label for="file">Hình ảnh</label>
+                <input type="file" name="file" id="file">
+            </div>
+            <div>
+                <label>Quốc tịch</label>
+                <select >
+                    <option >Việt Nam</option>
+                    <option>US</option>
+                    <option>China</option>
+                </select>
+            </div>
+            <div>
+                <label>Sở thích:</label><br>
+                <label><input type="checkbox" name="sothich">thể thao</label>
+                <label><input type="checkbox" name="sothich" checked>Du lịch</label>
+                <label><input type="checkbox" name="sothich">Âm nhạc</label>
+                <label><input type="checkbox" name="sothich">Ẩm thực</label>
+            </div>
+            <div>
+                <label for="ghichu">Ghi chú</label>
+                <textarea rows="5" id="ghichu"></textarea>
+            </div>
+            <hr>
+            <div>
+                <button type="submit">Đăng ký</button>
+                <button type="reset">Nhập lại</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
